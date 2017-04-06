@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>76fcbb18-9059-42dc-8015-422c748a37eb.SCHEMA:hotel</OriginalElement>
+  <nodes>
+    <node x="633.8387096774193" y="2016.0">76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.service_bill</node>
+    <node x="804.0" y="686.0">76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.floor</node>
+    <node x="0.0" y="686.0">76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.restaurant_item</node>
+    <node x="1433.8387096774193" y="327.0">76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.contact</node>
+    <node x="804.8387096774193" y="1274.0">76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.room_configuration</node>
+    <node x="1568.0" y="664.0">76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.person</node>
+    <node x="1036.5887096774193" y="1972.0">76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.restaurant_order</node>
+    <node x="516.0" y="664.0">76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.price_band</node>
+    <node x="1557.75" y="1689.0">76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.party_composition</node>
+    <node x="541.0887096774193" y="2299.0">76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.restaurant_order_composition</node>
+    <node x="1439.25" y="1340.0">76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.party</node>
+    <node x="1433.8387096774193" y="0.0">76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.region</node>
+    <node x="664.8387096774193" y="991.0">76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.room</node>
+    <node x="881.8387096774193" y="1645.0">76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.booking_period</node>
+    <node x="1320.0" y="708.0">76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.company</node>
+    <node x="1377.0" y="1013.0">76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.customer</node>
+    <node x="526.0" y="349.0">76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.price</node>
+    <node x="268.0" y="708.0">76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.service</node>
+    <node x="1072.0" y="708.0">76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.facility</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.booking_period" target="76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.room_configuration">
+      <point x="-67.0" y="-138.5" />
+      <point x="0.0" y="160.5" />
+    </edge>
+    <edge source="76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.restaurant_order" target="76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.booking_period">
+      <point x="-67.0" y="-138.5" />
+      <point x="1103.5887096774193" y="1947.0" />
+      <point x="1082.8387096774193" y="1947.0" />
+      <point x="67.0" y="138.5" />
+    </edge>
+    <edge source="76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.restaurant_order" target="76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.customer">
+      <point x="67.0" y="-138.5" />
+      <point x="1237.5887096774193" y="1947.0" />
+      <point x="1428.75" y="1947.0" />
+      <point x="1428.75" y="1249.0" />
+      <point x="1434.0" y="1249.0" />
+      <point x="-57.0" y="94.5" />
+    </edge>
+    <edge source="76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.floor" target="76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.price">
+      <point x="0.0" y="-116.5" />
+      <point x="928.0" y="634.0" />
+      <point x="720.8571428571428" y="634.0" />
+      <point x="70.85714285714278" y="116.5" />
+    </edge>
+    <edge source="76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.party" target="76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.customer">
+      <point x="0.0" y="-94.5" />
+      <point x="1553.25" y="1249.0" />
+      <point x="1548.0" y="1249.0" />
+      <point x="57.0" y="94.5" />
+    </edge>
+    <edge source="76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.restaurant_item" target="76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.price">
+      <point x="0.0" y="-116.5" />
+      <point x="124.0" y="624.0" />
+      <point x="543.7142857142857" y="624.0" />
+      <point x="-106.28571428571433" y="116.5" />
+    </edge>
+    <edge source="76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.company" target="76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.contact">
+      <point x="0.0" y="-94.5" />
+      <point x="1434.0" y="644.0" />
+      <point x="1500.8387096774193" y="644.0" />
+      <point x="-67.0" y="138.5" />
+    </edge>
+    <edge source="76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.service_bill" target="76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.service">
+      <point x="-57.0" y="-94.5" />
+      <point x="690.8387096774193" y="1947.0" />
+      <point x="382.0" y="1947.0" />
+      <point x="0.0" y="94.5" />
+    </edge>
+    <edge source="76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.price_band" target="76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.price">
+      <point x="0.0" y="-138.5" />
+      <point x="0.0" y="116.5" />
+    </edge>
+    <edge source="76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.restaurant_order_composition" target="76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.restaurant_order">
+      <point x="99.5" y="-94.5" />
+      <point x="839.5887096774193" y="2274.0" />
+      <point x="1170.5887096774193" y="2274.0" />
+      <point x="0.0" y="138.5" />
+    </edge>
+    <edge source="76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.customer" target="76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.person">
+      <point x="57.0" y="-94.5" />
+      <point x="1548.0" y="966.0" />
+      <point x="1635.0" y="966.0" />
+      <point x="-67.0" y="138.5" />
+    </edge>
+    <edge source="76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.customer" target="76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.company">
+      <point x="-57.0" y="-94.5" />
+      <point x="0.0" y="94.5" />
+    </edge>
+    <edge source="76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.party_composition" target="76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.person">
+      <point x="67.25" y="-94.5" />
+      <point x="1759.5" y="1620.0" />
+      <point x="1769.0" y="1620.0" />
+      <point x="67.0" y="138.5" />
+    </edge>
+    <edge source="76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.contact" target="76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.region">
+      <point x="0.0" y="-138.5" />
+      <point x="0.0" y="138.5" />
+    </edge>
+    <edge source="76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.service" target="76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.price">
+      <point x="0.0" y="-94.5" />
+      <point x="382.0" y="634.0" />
+      <point x="579.1428571428571" y="634.0" />
+      <point x="-70.85714285714289" y="116.5" />
+    </edge>
+    <edge source="76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.booking_period" target="76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.party">
+      <point x="67.0" y="-138.5" />
+      <point x="1082.8387096774193" y="1620.0" />
+      <point x="1496.25" y="1620.0" />
+      <point x="-57.0" y="94.5" />
+    </edge>
+    <edge source="76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.service_bill" target="76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.booking_period">
+      <point x="57.0" y="-94.5" />
+      <point x="804.8387096774193" y="1947.0" />
+      <point x="948.8387096774193" y="1947.0" />
+      <point x="-67.0" y="138.5" />
+    </edge>
+    <edge source="76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.restaurant_order_composition" target="76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.restaurant_item">
+      <point x="-99.5" y="-94.5" />
+      <point x="640.5887096774193" y="2274.0" />
+      <point x="124.0" y="2274.0" />
+      <point x="0.0" y="116.5" />
+    </edge>
+    <edge source="76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.room_configuration" target="76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.room">
+      <point x="-72.0" y="-160.5" />
+      <point x="876.8387096774193" y="1249.0" />
+      <point x="788.8387096774193" y="1249.0" />
+      <point x="0.0" y="116.5" />
+    </edge>
+    <edge source="76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.facility" target="76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.price">
+      <point x="0.0" y="-94.5" />
+      <point x="1186.0" y="624.0" />
+      <point x="756.2857142857142" y="624.0" />
+      <point x="106.28571428571422" y="116.5" />
+    </edge>
+    <edge source="76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.party_composition" target="76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.party">
+      <point x="-67.25" y="-94.5" />
+      <point x="1625.0" y="1620.0" />
+      <point x="1610.25" y="1620.0" />
+      <point x="57.0" y="94.5" />
+    </edge>
+    <edge source="76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.person" target="76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.contact">
+      <point x="0.0" y="-138.5" />
+      <point x="1702.0" y="644.0" />
+      <point x="1634.8387096774193" y="644.0" />
+      <point x="67.0" y="138.5" />
+    </edge>
+    <edge source="76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.room_configuration" target="76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.facility">
+      <point x="72.0" y="-160.5" />
+      <point x="1020.8387096774193" y="1249.0" />
+      <point x="1186.0" y="1249.0" />
+      <point x="0.0" y="94.5" />
+    </edge>
+    <edge source="76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.room" target="76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.floor">
+      <point x="62.0" y="-116.5" />
+      <point x="850.8387096774193" y="966.0" />
+      <point x="928.0" y="966.0" />
+      <point x="0.0" y="116.5" />
+    </edge>
+    <edge source="76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.room" target="76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.price_band">
+      <point x="-62.0" y="-116.5" />
+      <point x="726.8387096774193" y="966.0" />
+      <point x="650.0" y="966.0" />
+      <point x="0.0" y="138.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.40311004784689" x="918.0" y="1244.0" />
+  <SelectedNodes>
+    <node>76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.service_bill</node>
+    <node>76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.floor</node>
+    <node>76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.restaurant_item</node>
+    <node>76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.contact</node>
+    <node>76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.room_configuration</node>
+    <node>76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.person</node>
+    <node>76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.restaurant_order</node>
+    <node>76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.price_band</node>
+    <node>76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.party_composition</node>
+    <node>76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.restaurant_order_composition</node>
+    <node>76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.party</node>
+    <node>76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.region</node>
+    <node>76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.room</node>
+    <node>76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.booking_period</node>
+    <node>76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.company</node>
+    <node>76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.customer</node>
+    <node>76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.price</node>
+    <node>76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.service</node>
+    <node>76fcbb18-9059-42dc-8015-422c748a37eb.TABLE:hotel.facility</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Key columns</Category>
+    <Category>Columns</Category>
+  </Categories>
+</Diagram>
+
