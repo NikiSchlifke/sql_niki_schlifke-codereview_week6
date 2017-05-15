@@ -73,8 +73,9 @@ CREATE TABLE IF NOT EXISTS person
   id          INT PRIMARY KEY AUTO_INCREMENT,
   first_name  VARCHAR(255) NOT NULL,
   last_name   VARCHAR(255) NOT NULL,
-  birth_day   DATETIME,
-  contact_id INT
+  birth_day   DATE,
+  contact_id INT,
+  customer_id INT UNIQUE
 );
 
 -- A legal entity that can be a customer
@@ -82,15 +83,16 @@ CREATE TABLE IF NOT EXISTS company
 (
   id          INT PRIMARY KEY AUTO_INCREMENT,
   name        VARCHAR(255) NOT NULL,
-  contact_id INT
+  contact_id INT,
+  customer_id INT UNIQUE
 );
 
 -- A customer is the entity responsible for parties and is billed
 CREATE TABLE IF NOT EXISTS customer
 (
   id         INT PRIMARY KEY AUTO_INCREMENT,
-  person_id INT,
-  company_id INT
+  role  VARCHAR(255),
+  discount DECIMAL
 );
 
 -- Data of how a customer can be reached
@@ -204,17 +206,15 @@ ALTER TABLE booking_period
 
 -- A person can be a customer
 ALTER TABLE person
-  ADD CONSTRAINT person_contact FOREIGN KEY (contact_id) REFERENCES contact (id);
+  ADD CONSTRAINT person_contact FOREIGN KEY (contact_id) REFERENCES contact (id),
+  ADD CONSTRAINT person_customer FOREIGN KEY (customer_id) REFERENCES customer (id);
+
 
 -- A company can be a customer too and can have a representative
 ALTER TABLE company
-  ADD CONSTRAINT company_contact FOREIGN KEY (contact_id) REFERENCES contact (id);
+  ADD CONSTRAINT company_contact FOREIGN KEY (contact_id) REFERENCES contact (id),
+  ADD CONSTRAINT company_customer FOREIGN KEY (customer_id) REFERENCES customer (id);
 
-
--- A customer has contact information
-ALTER TABLE customer
-  ADD CONSTRAINT customer_person FOREIGN KEY (person_id) REFERENCES person (id),
-  ADD CONSTRAINT customer_company FOREIGN KEY (company_id) REFERENCES company (id);
 
 -- A contact can be in a specified region
 ALTER TABLE contact
@@ -251,3 +251,5 @@ ALTER TABLE restaurant_order
 ALTER TABLE restaurant_order_composition
   ADD CONSTRAINT restaurant_order_composition_restaurant_items FOREIGN KEY (restaurant_item_id) REFERENCES restaurant_item (id),
   ADD CONSTRAINT restaurant_order_composition_restaurant_order FOREIGN KEY (restaurant_order_id) REFERENCES restaurant_order (id);
+
+

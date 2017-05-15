@@ -20,3 +20,7 @@ The hotel Database provides the following Data:
 - available rooms
 - list of customers
 - customer bill based on room, services and extras
+
+---
+# Structure of the Database
+![Database Structure](hotel.png)
